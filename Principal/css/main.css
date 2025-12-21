@@ -1,0 +1,246 @@
+/* =========================
+   RESET Y BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER (APPLE STYLE) */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffffe6;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #0000001a;
+    padding: 0.8rem 1.5rem;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo img {
+    width: 36px;
+    height: 36px;
+}
+
+.logo h1 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* NAV */
+.nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.nav a:hover {
+    opacity: 1;
+}
+
+/* HERO */
+
+.hero {
+    height: 80vh;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* SECCIÓN AVENTURA */
+.aventura {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aventura h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.aventura-cards {
+    display: flex;
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s forwards;
+    animation-delay: 0.3s;
+}
+
+.aventura-cards.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    flex: 1;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ANIMACIÓN VECTORIAL */
+.animacion {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.zone-svg {
+    width: 150px;
+    fill: none;
+    stroke: #ffd900;
+    stroke-width: 4;
+    animation: shrink 3s infinite alternate;
+}
+
+@keyframes shrink {
+    from { transform: scale(1); }
+    to { transform: scale(0.7); }
+}
+
+/* CÓMO JUGAR */
+.como-jugar {
+    background-color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.como-jugar ul {
+    margin: 2rem 0;
+}
+
+.como-jugar li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* BOTÓN VERDE */
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: 999px;
+    background-color: #000000; 
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ffd900; 
+    transform: translateY(-2px);
+}
+
+/* FOOTER PROFESIONAL*/
+.footer {
+    background-color: #1d1d1f;
+    color: white;
+    padding: 1.5rem 2rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    gap: 1rem; 
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.4rem;
+    transition: transform 0.2s ease;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
