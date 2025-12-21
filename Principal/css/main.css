@@ -107,6 +107,11 @@ ul {
     margin-bottom: 2rem;
 }
 
+.hero img {
+   width: 549px;
+   height: auto
+}
+
 
 /* SECCIÓN AVENTURA */
 .aventura {
@@ -225,7 +230,7 @@ ul {
     gap: 1rem; 
 }
 
-.social a {
+.social img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,7 +239,7 @@ ul {
     transition: transform 0.2s ease;
 }
 
-.social a:hover {
+.social img:hover {
     transform: scale(1.2);
 }
 
@@ -242,5 +247,3 @@ ul {
     width: 24px;
     height: 24px;
 }
-
-
