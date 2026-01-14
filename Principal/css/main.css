@@ -247,3 +247,265 @@ ul {
     width: 24px;
     height: 24px;
 }
+
+
+/* ===== PÁGINAS INTERNAS ===== */
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* INSTRUCCIONES */
+.instructions h2 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.instruction-step {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.instruction-step img {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.instruction-step h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* MECÁNICAS */
+.mechanics {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.mechanics h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.mechanic-cards {
+    display: flex;
+    gap: 2rem;
+}
+
+/* TARJETAS ANIMADAS */
+.mechanic-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    flex: 1;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mechanic-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+
+/* ===== HISTORIA ===== */
+
+.story-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.story-title h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+/* CARRUSEL CSS PURO */
+.story-carousel {
+    overflow: hidden;
+    max-width: 333px;
+    margin: 0 auto 5rem;
+    border-radius: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+
+.carousel-track img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+/* SECCIONES HISTORIA */
+.story-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.story-section img {
+    width: 45%;
+    border-radius: 20px;
+}
+
+.story-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.story-section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* ===== CONTACTO ===== */
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-info a {
+    color: #28a745;
+    font-weight: 600;
+}
+
+/* MAPA */
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 4rem;
+}
+
+/* FORMULARIO */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+/* VALIDACIÓN CON REGEX */
+.contact-form input:valid,
+.contact-form textarea:valid {
+    border-color: #28a745;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+    border-color: #dc3545;
+}
+
+/* BOTÓN */
+.contact-form button {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 999px;
+    background-color: #28a745;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* ABOUT US */
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* SECCIÓN DE VIDEO PROFESIONAL */
+.about-video {
+    max-width: 900px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.about-video h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.about-video p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+

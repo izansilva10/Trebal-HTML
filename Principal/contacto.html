@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Cluedo</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <h1>Cluedo</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="instrucciones.html">Instrucciones</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="page">
+
+    <section class="contact">
+        <h2>Contacto</h2>
+
+        <!-- DATOS -->
+        <div class="contact-info">
+            <p><strong>Dirección:</strong> Mansión Tudor, Calle Misterio 13, Barcelona</p>
+            <p><strong>Teléfono:</strong> <a href="tel:+34900123456">+34 900 123 456</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@cluedo.com">info@cluedo.com</a></p>
+        </div>
+
+        <!-- MAPA -->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps?q=Barcelona&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- FORMULARIO -->
+        <form class="contact-form">
+            <h3>Envía tu consulta</h3>
+
+            <label>
+                Nombre
+                <input type="text">
+            </label>
+
+            <label>
+                Teléfono
+                <input type="tel">
+            </label>
+
+            <label>
+                Correo electrónico
+                <input type="email">
+            </label>
+
+            <label>
+                Mensaje
+                <textarea placeholder="Escribe aquí tu consulta o sugerencia sobre el juego..."></textarea>
+            </label>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="social">
+            <img src="img/facebook.png" alt="Facebook" class="social-icon"/>
+            <img src="img/instagram.png" alt="Instagram" class="social-icon"/>
+            <img src="img/twitter.png" alt="Twitter" class="social-icon"/>
+            <img src="img/tiktok.png" alt="Tiktok" class="social-icon"/>
+        </div>
+        <div class="copyright">
+            © 2030 Cluedo
+        </div>
+    </div>
+</footer>
+</body>
+</html>
